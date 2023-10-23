@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/de3c266c-956b-404a-8efa-4617342b11ed.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Pernil Ballester</title>
+  </head>
+  <body>
+    <div class="contenedor-navbar">
+      <div class="logo">
+        <img src="./img/de3c266c-956b-404a-8efa-4617342b11ed.jpg" alt="" />
+      </div>
+      <header>
+        <div class="nav">
+          <nav id="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#precio">Perniles</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    
+<a href="https://wa.me/5491121561059" class="btn-wsp" target="_blank"><img src="./img/WhatsApp_icon.png" alt=""></a>
+    
+<div class="contenedor-inicio" id="home">
+      <div class="contendor-2">
+        <div class="texto">
+          <h1>BIENVENIDOS A</h1>
+          <h2>Pernil Ballester</h2>
+          <p>Servicio de delivery de Perniles de cerdo recién horneados</p>
+          <div class="btn">
+            <a href="#precio"><button>Perniles</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="contenedor-texto">
+      <div class="img">
+        <img src="./img/pata4.jpg" alt="">
+      </div>
+      <div class="texto">
+        <div class="title">
+          <h1>Perniles reales, para gente real!</h1>
+        </div>
+        <p><b>S</b>e dice que los primeros cerdos domésticos fueron incorporados dentro de las civilizaciones gracias a los fenicios. Sin embargo, los primeros registros de Historia del jamón pierna o pernil datan del Imperio Romano a pesar de su época estimada de origen, Las delicias del cerdo calaron en las sociedades a través de los siglos. <br> Hoy, el pernil es una receta infaltable en las mesas familiares</p>
+        <h4>Perniles Ballester</h4>
+      </div>
+    </div>
+
+
+
+    <div class="contenedor-perniles" id="precio">
+      <div class="title">
+        <h1>Precios de perniles por cantidad de personas.</h1>
+        <p>TODOS LOS PRODUCTOS INCLUYEN PANES Y SALSAS.</p>
+      </div>
+      <div class="seccion-perniles">
+        <!-- <div class="imagen">
+          <img src="./img/pata2.jpg" alt="" />
+        </div> -->
+        <div class="pernil-1">
+          <div class="imagen-pernil">
+            <img src="./img/pata2.jpg" alt="" />
+          </div>
+          <h2>Pernil</h2>
+          <h4>Para reservas o información Wsp: <b>1121561059</b></h4>
+          <p class="mas-info">
+            PARA MAS INFORMACIÓN APRETE EL BOTON
+          </p>
+          <div class="boton">
+            <button>Mas información</button>
+          </div>
+        </div>
+        <!-- ------- -->
+
+        <div class="pernil-1">
+          <div class="imagen-pernil">
+            <img src="./img/pata5.jpg" alt="" />
+          </div>
+          <h2>Paleta</h2>
+          <h4>Para reservas o información Wsp: <b>1121561059</b></h4>
+          <p class="mas-info">
+            PARA MAS INFORMACIÓN APRETE EL BOTON
+          </p>
+          <div class="boton">
+            <button>Mas información</button>
+          </div>
+        </div>
+
+        <!-- ------- -->
+
+    <script src="./js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1100,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
